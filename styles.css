@@ -206,8 +206,23 @@ input:checked ~ label span:nth-child(3) {
     font-size: 11px;
     text-shadow: 2px 1px 4px #ccc;
 }
-@media screen and (max-width: 960px) {
+.disclaimer_mob {
+    display: flex;
+    position: relative;
+    width: 50%;
+    left: 100px;
+    padding: 35px;
+    color: #BFC2FF;
+    font-size: 11px;
+    text-shadow: 2px 1px 4px #ccc;
+}
+@media only screen and (max-width: 960px) {
     .disclaimer {
+        display: none;
+    }
+}
+@media only screen and (min-width: 959px) {
+    .disclaimer_mob {
         display: none;
     }
 }
