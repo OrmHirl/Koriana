@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Новости Корианской Империи</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="druckerei.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <style>.page{padding:50px 40px}</style>
+    <style>.page__scanlines{opacity: 50%;}</style>
+    <style>.page__wrapper {display: grid;grid-template-columns:1fr 0.12fr;grid-gap:0;}</style>
+    <style>.page__item{grid-template-rows:subgrid;}</style>
+    <style>.page__item:nth-child(1){border-right: 3px solid;}</style>
+    <style>.page__item:nth-child(2){margin:0px;padding:0px;text-align:center;}</style>
+    <style>.page__item h3{margin:9px 0px 0px 0px;text-align:center;}</style>
+    <style>.page__item h4{font-family:'Baron Neue Black';color:#FFD700;font-size: 18px;margin-left:1%;}</style>
+    <style>.page__item h5{text-align:center;}</style>
+    <style>.page__item img{margin-bottom:5px}</style>
+    <style>.page__subitem-minor{display:flex;background-color:#3F5B91;width:100%;}</style>
+    <style>.page__subitem-minor img{transform:scale(0.8);}</style>
+    <style>.page__subitem-minor h4{text-align:inherit;}</style>
+    <style>.page__subitem {display:flex;padding: 0px 0px 5px 0px;margin: 2%;flex-direction: row;flex-wrap:wrap;align-items:center;background-color: #324877;color:#fff;border:2px solid #3F5B91;}</style>
+    <style>.page__sublink{padding:5px;text-align:justify;}</style>
+    <style>.page__archive{margin:0;padding:0;display:flex;flex-direction:column;justify-content:flex-start;align-items:center;min-height:100vh;background-color:#031321;}</style>
+    <style>.archive_btn{position:relative;display:inline-block;width:120px;height:35px;margin:8px 0px;padding:15px 30px;color:#2196f3;background-image:url(img/btn.png);background-position:center;background-size:cover;text-decoration:none;text-align:center;font-size:16px;overflow:hidden;transition:0.2s;}</style>
+    <style>.archive_btn p{margin:0;padding:0;width:100%;height:100%;line-height:7px;}</style>
+    <style>.archive_btn:hover{background:rgba(0,0,0,.1);color:#4CFF00;text-shadow:.5px .5px 2px #1A9324;background-image:url(img/btn_hov.png);background-position:center;background-size:cover;box-shadow:0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;border-radius:29px;transition-delay:1s;}</style>
+    <style>.archive_btn span{position:absolute;display:block;}</style>
+    <style>.archive_btn span:nth-child(1){top:0;left:-100%;width:100%;height:2px;background:linear-gradient(90deg, transparent, #2196f3);}</style>
+    <style>.archive_btn:hover span:nth-child(1){left:100%;transition:1s;}</style>
+    <style>.archive_btn span:nth-child(2){top:-100%;right:0;width:2px;height:100%;background:linear-gradient(180deg, transparent, #2196f3);}</style>
+    <style>.archive_btn:hover span:nth-child(2){top:100%;transition:1s;transition-delay:0.25s;}</style>
+    <style>.archive_btn span:nth-child(3){bottom:0;right:-100%;width:100%;height:2px;background:linear-gradient(270deg, transparent, #2196f3);}</style>
+    <style>.archive_btn:hover span:nth-child(3){right:100%;transition:1s;transition-delay:0.5s;}</style>
+    <style>.archive_btn span:nth-child(4){bottom:-100%;left:0;width:2px;height:100%;background:linear-gradient(360deg, transparent, #2196f3);}</style>
+    <style>.archive_btn:hover span:nth-child(4){bottom:100%;transition:1s;transition-delay:0.75s;}</style>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__menu menu">
+                <div class="header__logo"><a href="index.html"><img src="img/logo.png" alt="Koryanna Empire"></a></div>
+                <div class="menu__burger">
+                    <span></span>
+                </div>
+                <nav class="menu__body">
+                    <ul class="menu__list">
+                        <li><a href="news.html" class="menu__link">Nuntia</a>
+                        <li><a href="sodalitas.html" class="menu__link">Sodalitas</a>
+                            <span class="menu__arrow arrow"></span>
+                            <ul class="sub-menu__list">
+                                <li><a href="administratio.html" class="sub-menu__link">Administratio</a>
+                                    <span class="sub-menu__arrow arrow"></span>
+                                    <ul class="sub-sub-menu__list">
+                                        <li><a href="about_us.html" class="sub-sub-menu__link">О клубе</a></li>
+                                        <li><a href="fuehrung.html" class="sub-sub-menu__link">Руководство</a></li>
+                                        <li><a href="ruling_council.html" class="sub-sub-menu__link">Правящий совет</a></li>
+                                        <li><a href="executors.html" class="sub-sub-menu__link">Офицеры-исполнители</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="lex.html" class="sub-menu__link">Lex</a>
+                                    <span class="sub-menu__arrow arrow"></span>
+                                    <ul class="sub-sub-menu__list">
+                                        <li><a href="charter.html" class="sub-sub-menu__link">Хартия</a></li>
+                                        <li><a href="regulations.html" class="sub-sub-menu__link">Уставы</a></li>
+                                        <li><a href="orders.html" class="sub-sub-menu__link">Приказы</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="statistics.html" class="sub-menu__link">Statistica</a></li>
+                                <li><a href="dignitatum.html" class="sub-menu__link">Notitia Dignitatum</a>
+                                    <span class="sub-menu__arrow arrow"></span>
+                                    <ul class="sub-sub-menu__list">
+                                        <li><a href="tabel_of_ranks.html" class="sub-sub-menu__link">Табель о рангах</a></li>
+                                        <li><a href="capitulum.html" class="sub-sub-menu__link">Орденский капитул</a></li>
+                                        <li><a href="rangliste.html" class="sub-sub-menu__link">Списки по старшинству</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="spectat.html" class="menu__link">Quod Spectat</a>
+                            <span class="menu__arrow arrow"></span>
+                            <ul class="sub-menu__list">
+                                <li><a href="methodology.html" class="sub-menu__link">Методология</a></li>
+                                <li><a href="articles.html" class="sub-menu__link">Статьи</a></li>
+                                <li><a href="disputes.html" class="sub-menu__link">Полемика</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="regnum.html" class="menu__link">Regnum</a>
+                            <span class="menu__arrow arrow"></span>
+                            <ul class="sub-menu__list">
+                                <li><a href="history_Koryanna.html" class="sub-menu__link">История Корианы</a></li>
+                                <li><a href="history_IGF.html" class="sub-menu__link">История ИГС</a></li>
+                                <li><a href="government.html" class="sub-menu__link">Правительство</a></li>
+                                <li><a href="war_cabinet.html" class="sub-menu__link">Военный кабинет</a></li>
+                                <li><a href="economy.html" class="sub-menu__link">Экономика</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="encyclopaedia.html" class="menu__link">Encyclopaedia</a>
+                            <span class="menu__arrow arrow"></span>
+                            <ul class="sub-menu__list">
+                                <li><a href="astrography.html" class="sub-menu__link">Астрография</a></li>
+                                <li><a href="astropolitics.html" class="sub-menu__link">Астрополитика</a></li>
+                                <li><a href="gme.html" class="sub-menu__link">БВЭ</a></li>
+                                <li><a href="documents.html" class="sub-menu__link">Документы</a></li>
+                                <li><a href="linguistics.html" class="sub-menu__link">Лингвистика</a></li>
+                                <li><a href="mysticism.html" class="sub-menu__link">Мистика</a></li>
+                                <li><a href="prosopography.html" class="sub-menu__link">Просопография</a></li>
+                                <li><a href="technopedia.html" class="sub-menu__link">Технопедия</a></li>
+                                <li><a href="uniformology.html" class="sub-menu__link">Униформология</a></li>
+                                <li><a href="chronology.html" class="sub-menu__link">Хронология</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="culture.html" class="menu__link">Cultura</a>
+                            <span class="menu__arrow arrow"></span>
+                            <ul class="sub-menu__list">
+                                <li><a href="librarium.html" class="sub-menu__link">Вивлиофика</a></li>
+                                <li><a href="gallery.html" class="sub-menu__link">Галерея</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="civitas.html" class="menu__link">Civitas</a>
+                            <span class="menu__arrow arrow"></span>
+                            <ul class="sub-menu__list">
+                                <li><a href="forum.html" class="sub-menu__link">Форум</a></li>
+                                <li><a href="links.html" class="sub-menu__link">Ссылки</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__icon"><img src="img/rfs_logo.png" alt="RFS"></div>
+            </div>
+        </header>
+        <main class="page">
+            <div class="page__scanlines"></div>
+            <img src="img/bezel_text.png" id="bezel" class="noselect">
+            <div class="page__wrapper">
+                <div class="page__item">
+                    <h3>///// Новости Империи /////</h3>
+                    <div class="page__subitem">
+                        <div class="page__subitem-minor">
+                           <img src="img/tarkin_doctrine.webp">
+                        <h4>&#187; 1:1:1 / Начало новогодней недели</h4> 
+                        </div>
+                        <div class="page__sublink"><p>Начало праздничной новогодней недели было отмечено ежегодным Шалданайским парадом, открывшим торжества на Кориане. Парад почтили своим присутствием Претор Никсон и гранд-мофф Хасинто. Оркестр карликов выступил просто божественно, исполнив на литаврах симфонию "Славься в веках, о Претор родной наш!". Его Высокопревосходительство изволили прослезиться и пожаловать карликам сто тонн мандаринов.</p></div>
+                    </div>
+                    <div class="page__subitem">
+                        <div class="page__subitem-minor">
+                           <img src="img/tarkin_doctrine.webp">
+                        <h4>&#187; 1:1:18 / День Рождения Претора</h4> 
+                        </div>
+                        <div class="page__sublink"><p>Сегодня Корианская империя торжественно отмечает День Рождения своего руководителя, Его Высокопревосходительства Претора Эдварда Никсона. Связанные с этой знаменательной датой торжества традиционно проходят на столичной планете и по всем мирам звездного скопления Дорьянд. Трудно описать словами ликование, охватившее как нобилитет и армию, так и простой народ. Ожидается, что Его Высокопревосходительство обратится к населению с приветственной речью на ежегодном параде, который состоится в 12:00 по Корбургскому времени.</p></div>
+                    </div>
+                    <div class="page__subitem">
+                        <div class="page__subitem-minor">
+                           <img src="img/tarkin_doctrine.webp">
+                        <h4>&#187; 1:1:18 / Ежегодный парад</h4> 
+                        </div>
+                        <div class="page__sublink"><p>Парад по случаю Дня Рождения Его Высокопревосходительства Претора прошел весьма успешно. В этом году обошлось всего пятью смертями нижних чинов от обморожения. Ну да кто считает этот низший класс, верно? Слава Претору! Слава Кориане!</p></div>
+                    </div>
+                    <div class="page__subitem">
+                        <div class="page__subitem-minor">
+                           <img src="img/tarkin_doctrine.webp">
+                        <h4>&#187; 1:1:18 / Дворцовый прием</h4> 
+                        </div>
+                        <div class="page__sublink"><p>Вечером во дворце состоялся торжественный прием по случаю Дня Рождения Его Высокопревосходительства Претора. Великий Эдвард Никсон как всегда набухался с адмиралом Незвановым и залег под столом. Адмирал Крамнер избил моффа Карлоса. Гранд-мофф Хасинто, поставивший для торжеств три тонны чистейшего глиттерстима, плюнул в лицо вице-директору департамента научных разработок Зогелю. Скандал удалось замять, Зогель был вынужден подать в отставку по собственному желанию.</p></div>
+                    </div>
+                </div>
+                <div class="page__item">
+                    <h5>Архив</h5>
+                    <div class="page__archive">
+                    <a href="2003_news.html" class="archive_btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <p>03 г</p>
+                    </a>
+                    <a href="2004_news.html" class="archive_btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <p>04 г</p>
+                    </a>
+                    <a href="2005_news.html" class="archive_btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <p>05 г</p>
+                    </a>
+                    <a href="2006_news.html" class="archive_btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <p>06 г</p>
+                    </a>
+                    <a href="2007_news.html" class="archive_btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <p>07 г</p>
+                    </a>
+                    <a href="2008_news.html" class="archive_btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <p>08 г</p>
+                    </a>
+                    <a href="2009_news.html" class="archive_btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <p>09 г</p>
+                    </a>
+                    <a href="2010_news.html" class="archive_btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <p>10-12 гг</p>
+                    </a>
+                    <a href="2013_news.html" class="archive_btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <p>13 г</p>
+                    </a>
+                    <a href="2014_news.html" class="archive_btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <p>14 г</p>
+                    </a>
+                    <a href="2015_news.html" class="archive_btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <p>15 г</p>
+                    </a>
+                    <a href="2016_news.html" class="archive_btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <p>16 г</p>
+                    </a>
+                    <a href="2017_news.html" class="archive_btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <p>17 г</p>
+                    </a>
+                    <a href="2018_news.html" class="archive_btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <p>18-22 гг</p>
+                    </a>
+                    <a href="2023_news.html" class="archive_btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <p>23 г</p>
+                    </a>
+                </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="disclaimer">
+                <p>Все оригинальные тексты, переводы, изображения и модели являются © Корианской империи и Эдварда Никсона. Пожалуйста, не используйте данные материалы без разрешения авторов. Указанные материалы являются фан-творчеством и не предназначены для каких-либо коммерческих действий и/или извлечения прибыли. Цитируемые и приводимые в качестве иллюстраций материалы третьих лиц являются © своих создателей. Всё относящееся к вселенной Star Wars является © LucasFilm Ltd.</p>
+            </div>
+            <div class="disclaimer__mob">
+                <p>© Корианская империя</p>
+            </div>
+        </footer>
+    </div>
+	<script src="js/script.js"></script>
+	</body>
+</html>

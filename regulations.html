@@ -4,17 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Корианская Империя | Ваша империя в мировой сети</title>
+    <title>Уставы | Корианская Империя</title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="druckerei.css">
     <link rel="icon" type="image/png" href="img/favicon.png">
+    <style>.page__content{display:grid;background-color:transparent;box-shadow:none;margin:10px 5px;padding:0px;grid-gap:1%;grid-template-columns:repeat(2,1fr);}</style>
+    <style>.page__item{display:grid;margin:10px;padding-bottom:10px;background-color:#3F5B91;justify-content:space-between;grid-template-rows:subgrid;color:#fff;font-size:14px;box-shadow:1px 2px 5px rgba(1,0,0,0.3);}</style>
+    <style>.page__subitem{display:flex;width: 100%;padding: 0px 10px 5px 10px;margin: 0px 0px 5px 0px;flex-direction: row;flex-wrap:wrap;align-items:center;font-family:'Baron Neue Black';font-size: 19px;background-color: #324877;color:#fff;border-bottom:2px ridge rgba(0,0,0,0.1);}</style>
+    <style>.page__scantop{opacity:20%;}</style>
+    <style>.page__subitem h4{;}</style>
+    <style>.page__subitem img{margin-right: 10px;}</style>
+    <style>.page__sublink{padding: 0px 10px 0px 10px;font-style: italic;}</style>
+    <style>.page__item:nth-child(1){display:flex;flex-wrap:wrap;text-align:justify;}</style>
+    <style>.page__item:nth-child(2){display:flex;flex-wrap:wrap;text-align:justify;}</style>
+    <style>.page__item:nth-child(3){display:flex;flex-wrap:wrap;text-align:justify;}</style>
+    <style>.page__item:nth-child(4){display:flex;flex-wrap:wrap;text-align:justify;}</style>
+    <style>.page__item:nth-child(5){display:flex;flex-wrap:wrap;text-align:justify;}</style>
+    <style>.page__item:nth-child(6){display:flex;flex-wrap:wrap;text-align:justify;}</style>
+    <style>@media(max-width:1000px){.page__content{display:flex;flex-direction:column;}}</style>
+    <style>@media(max-width:425px){.page__subitem {margin:0px;padding:0px;align-content: center;justify-content: center;}.page__subitem h4{margin: 5px;padding:0px;font-size:18px;text-align:center;}}</style>
 </head>
 <body>
     <div class="wrapper">
         <header class="header">
             <div class="header__menu menu">
-                <div class="header__logo"><a href="#"><img src="img/logo.png" alt="Koryanna Empire"></a></div>
+                <div class="header__logo"><a href="index.html"><img src="img/logo.png" alt="Koryanna Empire"></a></div>
                 <div class="menu__burger">
                     <span></span>
                 </div>
@@ -106,23 +121,53 @@
         </header>
         <main class="page">
             <div class="page__scanlines"></div>
+            <div class="page__scantop"></div>
             <img src="img/bezel_text.png" id="bezel" class="noselect">
-            <section class="page__section page__section_1">
-                <div class="page__starter-logo">
-                    <img src="img/Logo_Koriana.webp" alt="Koryanna Logo">
+            <div class="page__block"><h5>Уставы и доктринальные документы</h5></div>
+            <div class="page__content">
+                <div class="page__item">
+                    <div class="page__subitem">
+                        <img src="img/expansion.webp" alt="">
+                        <h4><a href="expansion_edict.html">Декрет экспансии</a></h4>
+                    </div>
+                    <div class="page__sublink"><p>Декрет экспансии, утвержден&shy;ный Е.И.В. Галактическим Императором в 20 г. в.рс., стал базовым документом, очерчи&shy;вающим общие направления имперской политики в области исследования и колонизации новых территорий, а также выдвинувшим претензии на универсалистский характер Империи и имперского государства.</p></div>
                 </div>
-            </section>
-            <section class="page__section page__section_2">
-                <h1 class="page__title">Приветствую вас, джентльство!</h1>
-                <div class="page__text">
-                    <p>Добро пожаловать на территорию Корианской империи – последнего осколка великой Галактической империи в этой части галактики. Вообще-то корианцы не любят посторонних и держат границы сектора закрытыми, но вам, похоже, крупно повезло. Уж не знаю, какими путями, но вам удалось раздобыть годовую учебную визу класса IIIE, а это значит, что вы принадлежите к чистому человеческому виду, происходите с одного из миров Ядра, не были замечены в антиимперской деятельности и смогли успешно пройти мониторинг на знание основ <a href="#">высокой человеческой культуры</a> и соответствие принципам <a href="#">правомыслия</a> в консульстве Корианской империи.</p>
-                    <p>Не торопитесь, можете оглядеться по сторонам и запомнить следующие простые правила, которые еще не раз помогут вам на территории Империи. Не сорите, не шумите, ведите себя прилично. Корианцы уважают иерархию и естественное чувство ранга, ожидая того же от гостей сектора. Будучи негражданином, вы находитесь в самом низу социальной лестницы. Помните об этом и демонстрируйте должное почтение хозяевам. Корианское общество весьма милитаризовано, а потому военные пользуются здесь особыми привилегиями. Держитесь от них подальше, а завидев преторианцев, лучше и вовсе скройтесь с глаз. Поверьте, так будет лучше для вашей же безопасности.</p>
-                    <p>Не забывайте о том, что Кориана – аристократическая республика, во главе которой стоит наследственный монарх, воплощающий в себе <a href="#"><i>маэстат и стормакт</i></a> Империи. Понятия чести и сословной гордости играют здесь очень важную роль даже в повседневной жизни людей. Ни в коем случае не конфликтуйте с местными нобилями и аристократами, ведь по их представлениям у вас нет, и не может быть чести, а, следовательно, вам не грозит вызов на дуэль. Скорее всего, вас просто убьют как паршивого <i>тшадж’ра</i>, а тело выбросят в сточную канаву.</p>
-                    <p>Никогда не забывайте этих простых правил. Никто не требует от вас досконального следования всем заповедям <a href="#">палпатинизма-таркинизма</a>, однако об основах правомыслия не стоит забывать даже во сне. Будьте скромным, будьте кротким, будьте послушным, будьте лояльным, и имперское государство вознаградит вас своим благожелательным невниманием.</p>
-                    <p>Вы получили гостевой уровень допуска, а значит, вы можете свободно ознакомиться с материалами, помещенными в открытых разделах местной ГалоСети и публичных библиотеках. Что еще… ах, да! Должен предупредить, что у нас весьма высокий входной барьер. Корианская империя чтит заветы эпохи Контиспексов из-за чего процент населения, владеющего <a href="#">высокогалактическим</a>, здесь значительно выше, чем в среднем по Ядру. Если вы привыкли к базовому языку и ваш уровень владения высокогалактом хромает, советую вам подтянуть его. Пожалуй, это все. Советую начать ознакомление с нашим ресурсом с раздела <a href="#">"методология"</a>. Удачи, и да хранит вас Великая Омега!</p>
-                    <p>Мир и Порядок!</p><br><br><br><br><br>
+                <div class="page__item">
+                    <div class="page__subitem">
+                        <img src="img/discipline_code.webp" alt="">
+                        <h4><a href="discipline_code.html">Дисциплинарный устав</a></h4>
+                    </div>
+                    <div class="page__sublink"><p>Дисциплинарный устав опреде&shy;ляет сущность дисциплины, обязанности членов клуба по ее соблюдению, регламентируют правила поведения и нормы вежливости членов клуба в рамках игровой вселенной, детализирует правила функцио&shy;нирования судов чести, а также содержит перечень дисципли&shy;нарных проступков и нала&shy;гаемых за них взысканий.</p></div>
+                    </div>
+                <div class="page__item">
+                    <div class="page__subitem">
+                        <img src="img/tarkin_doctrine.webp" alt="">
+                        <h4><a href="tarkin_doctrine.html">Доктрина Таркина</a></h4>
+                    </div>
+                    <div class="page__sublink"><p>Доктрина Таркина, утвержден&shy;ная Е.И.В. Галактическим Императором в 18 г. в.рс., став ответом на вызовы безопасности и распространение протестных настроений. В рамках доктрины была проведена тихая административная реформа Имперского государства, заключавшаяся в создании надсекторов.</p></div>
                 </div>
-            </section>
+                <div class="page__item">
+                    <div class="page__subitem">
+                        <img src="img/racial_doctrine.webp" alt="">
+                        <h4><a href="racial_doctrine.html">Расовая доктрина</a></h4>
+                    </div>
+                    <div class="page__sublink"><p>Расовая доктрина Корианской империи является клубным документом, регулирующим правила создания игровых персонажей и порядок заполнения членами клуба анкет своих персонажей, равно как и правила, касающиеся персонажей-дублей.</p></div>
+                </div>
+                <div class="page__item">
+                    <div class="page__subitem">
+                        <img src="img/nobility_act.webp" alt="">
+                        <h4><a href="nobility_act.html">Уложение о нобилях</a></h4>
+                    </div>
+                    <div class="page__sublink"><p>Уложение о нобилях Корианской империи представляет собой клубный документ, устанавливающий и регулирующий характер, правила поведения и систему самоуправления нобилитета, правила возведения в сословие нобилей и порядок утраты данного сословного статуса, систему титулов и сообщаемых ими привилегий.</p></div>
+                </div>
+                <div class="page__item">
+                    <div class="page__subitem">
+                            <img src="img/penal_code.webp" alt="">
+                        <h4><a href="penal_code.html">Уложение о поощрениях и наказаниях</a></h4>
+                    </div>
+                    <div class="page__sublink"><p>Уложение о поощрениях и наказаниях является клубным документом, регламентирующим способы поощрения членов клуба за их достижения, а также характер и порядок наказания за нарушения правил клуба. Уложение также устанавливает и регулирует процесс внутриклубного судопроизводства.</p></div>
+                </div>
+                </div>
         </main>
         <footer class="footer">
             <div class="disclaimer">
