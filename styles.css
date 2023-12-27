@@ -357,6 +357,9 @@ body.touch .arrow {
     body {
         overflow-x: hidden;
     }
+    .header {
+        position: fixed;
+    }
     .header__menu {
         display: block;
         width: 100vw;
