@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Законодательство | Ваша империя в мировой сети</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="druckerei.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <style>.page__wrapper {display: grid;margin: 10px 5px;grid-gap: 1%;grid-template-columns: repeat(3, 1fr);grid-template-areas: "adm1 adm2 adm3 adm4";}</style>
+    <style>.page__block:nth-child(1){grid-area: adm1;margin: 10px 0px;}</style>
+    <style>.page__block:nth-child(2){grid-area: adm2;margin: 10px 0px;}</style>
+    <style>.page__block:nth-child(3){grid-area: adm3;margin: 10px 0px;}</style>
+    <style>.page__block:nth-child(1) a:hover{background-image:url(img/lex_btn1_hov.png);z-index:10;}</style>
+    <style>.page__block:nth-child(2) a:hover{background-image:url(img/lex_btn2_hov.png);z-index:10;}</style>
+    <style>.page__block:nth-child(3) a:hover{background-image:url(img/lex_btn3_hov.png);z-index:10;}</style>
+    <style>@media(max-width:899px){.page__text{padding: 0% 10% 0% 0%;}.page__wrapper{display:block;margin:0%;}}</style>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__menu menu">
+                <div class="header__logo"><a href="#"><img src="img/logo.png" alt="Koryanna Empire"></a></div>
+                <div class="menu__burger">
+                    <span></span>
+                </div>
+                <nav class="menu__body">
+                    <ul class="menu__list">
+                        <li><a href="news.html" class="menu__link">Nuntia</a>
+                        <li><a href="sodalitas.html" class="menu__link">Sodalitas</a>
+                            <span class="menu__arrow arrow"></span>
+                            <ul class="sub-menu__list">
+                                <li><a href="administratio.html" class="sub-menu__link">Administratio</a>
+                                    <span class="sub-menu__arrow arrow"></span>
+                                    <ul class="sub-sub-menu__list">
+                                        <li><a href="about_us.html" class="sub-sub-menu__link">О клубе</a></li>
+                                        <li><a href="fuehrung.html" class="sub-sub-menu__link">Руководство</a></li>
+                                        <li><a href="ruling_council.html" class="sub-sub-menu__link">Правящий совет</a></li>
+                                        <li><a href="executors.html" class="sub-sub-menu__link">Офицеры-исполнители</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="lex.html" class="sub-menu__link">Lex</a>
+                                    <span class="sub-menu__arrow arrow"></span>
+                                    <ul class="sub-sub-menu__list">
+                                        <li><a href="charter.html" class="sub-sub-menu__link">Хартия</a></li>
+                                        <li><a href="regulations.html" class="sub-sub-menu__link">Уставы</a></li>
+                                        <li><a href="orders.html" class="sub-sub-menu__link">Приказы</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="statistics.html" class="sub-menu__link">Statistica</a></li>
+                                <li><a href="dignitatum.html" class="sub-menu__link">Notitia Dignitatum</a>
+                                    <span class="sub-menu__arrow arrow"></span>
+                                    <ul class="sub-sub-menu__list">
+                                        <li><a href="tabel_of_ranks.html" class="sub-sub-menu__link">Табель о рангах</a></li>
+                                        <li><a href="capitulum.html" class="sub-sub-menu__link">Орденский капитул</a></li>
+                                        <li><a href="rangliste.html" class="sub-sub-menu__link">Списки по старшинству</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="spectat.html" class="menu__link">Quod Spectat</a>
+                            <span class="menu__arrow arrow"></span>
+                            <ul class="sub-menu__list">
+                                <li><a href="methodology.html" class="sub-menu__link">Методология</a></li>
+                                <li><a href="articles.html" class="sub-menu__link">Статьи</a></li>
+                                <li><a href="disputes.html" class="sub-menu__link">Полемика</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="regnum.html" class="menu__link">Regnum</a>
+                            <span class="menu__arrow arrow"></span>
+                            <ul class="sub-menu__list">
+                                <li><a href="history_Koryanna.html" class="sub-menu__link">История Корианы</a></li>
+                                <li><a href="history_IGF.html" class="sub-menu__link">История ИГС</a></li>
+                                <li><a href="government.html" class="sub-menu__link">Правительство</a></li>
+                                <li><a href="war_cabinet.html" class="sub-menu__link">Военный кабинет</a></li>
+                                <li><a href="economy.html" class="sub-menu__link">Экономика</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="encyclopaedia.html" class="menu__link">Encyclopaedia</a>
+                            <span class="menu__arrow arrow"></span>
+                            <ul class="sub-menu__list">
+                                <li><a href="enc_astrography.html" class="sub-menu__link">Астрография</a></li>
+                                <li><a href="enc_astropolitics.html" class="sub-menu__link">Астрополитика</a></li>
+                                <li><a href="enc_gme.html" class="sub-menu__link">БВЭ</a></li>
+                                <li><a href="enc_documents.html" class="sub-menu__link">Документы</a></li>
+                                <li><a href="enc_linguistics.html" class="sub-menu__link">Лингвистика</a></li>
+                                <li><a href="enc_mysticism.html" class="sub-menu__link">Мистика</a></li>
+                                <li><a href="enc_prosopography.html" class="sub-menu__link">Просопография</a></li>
+                                <li><a href="enc_technopedia.html" class="sub-menu__link">Технопедия</a></li>
+                                <li><a href="enc_uniformology.html" class="sub-menu__link">Униформология</a></li>
+                                <li><a href="enc_chronology.html" class="sub-menu__link">Хронология</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="culture.html" class="menu__link">Cultura</a>
+                            <span class="menu__arrow arrow"></span>
+                            <ul class="sub-menu__list">
+                                <li><a href="librarium.html" class="sub-menu__link">Вивлиофика</a></li>
+                                <li><a href="gallery.html" class="sub-menu__link">Галерея</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="civitas.html" class="menu__link">Civitas</a>
+                            <span class="menu__arrow arrow"></span>
+                            <ul class="sub-menu__list">
+                                <li><a href="forum.html" class="sub-menu__link">Форум</a></li>
+                                <li><a href="links.html" class="sub-menu__link">Ссылки</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__icon"><img src="img/rfs_logo.png" alt="RFS"></div>
+            </div>
+        </header>
+        <main class="page">
+            <div class="page__scanlines"></div>
+            <img src="img/bezel_text.png" id="bezel" class="noselect">
+            <section class="page__section page__section_2">
+                <h2 class="page__title">Мир и Порядок!</h2>
+                <div class="page__text">
+                    <p>Настоящий раздел представляет собой перечень сведений, относящихся к клубу <b>&laquoКорианская Империя — Императорские Гвардейские Силы&raquo</b>. В частности, здесь вы можете ознакомиться с краткой официальной историей нашего клуба и изучить информацию, касающуюся различных эшелонов руководства организацией, получив некоторое представление о клубной иерархии.</p>
+                </div>
+                <div class="page__wrapper">
+                    <div class="page__block">
+                        <a href="charter.html"><img src="img/lex_btn1.png" alt=""></a>
+                    </div>
+                    <div class="page__block">
+                        <a href="regulations.html"><img src="img/lex_btn2.png" alt=""></a>
+                    </div>
+                    <div class="page__block">
+                        <a href="orders.html"><img src="img/lex_btn3.png" alt=""></a>
+                    </div>
+                    <br><br>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="disclaimer">
+                <p>Все оригинальные тексты, переводы, изображения и модели являются © Корианской империи и Эдварда Никсона. Пожалуйста, не используйте данные материалы без разрешения авторов. Указанные материалы являются фан-творчеством и не предназначены для каких-либо коммерческих действий и/или извлечения прибыли. Цитируемые и приводимые в качестве иллюстраций материалы третьих лиц являются © своих создателей. Всё относящееся к вселенной Star Wars является © LucasFilm Ltd.</p>
+            </div>
+            <div class="disclaimer__mob">
+                <p>© Корианская империя</p>
+            </div>
+        </footer>
+    </div>
+	<script src="js/script.js"></script>
+	</body>
+</html>
